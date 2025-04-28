@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Kegiatan Harian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 flex items-center justify-center min-h-screen px-4">
+
+    <main class="bg-white shadow-md rounded-lg w-full max-w-md p-6">
+        <h1 class="text-3xl font-semibold text-center text-gray-800 mb-5">Catatan Kegiatan</h1>
+        
+        <form id="form-kegiatan" class="flex gap-2 mb-4">
+            <input 
+                type="text" 
+                id="input-kegiatan" 
+                placeholder="Apa yang mau kamu kerjakan?" 
+                class="flex-grow px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+            >
+            <button 
+                type="submit" 
+                class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition"
+            >
+                Tambah
+            </button>
+        </form>
+
+        <ul id="daftar-kegiatan" class="space-y-2 text-gray-700">
+            <!-- Kegiatan akan ditampilkan di sini -->
+        </ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

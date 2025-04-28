@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Ghaza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 min-h-screen flex items-center justify-center p-5">
+
+    <section class="bg-white w-full max-w-md p-6 rounded-xl shadow-lg text-center">
+        <h1 class="text-3xl font-bold mb-5 text-gray-800">Kalkulator Sederhana</h1>
+        
+        <input 
+            type="number" 
+            id="nilai-pertama" 
+            placeholder="Angka pertama" 
+            class="block w-full mb-3 px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+        >
+        <input 
+            type="number" 
+            id="nilai-kedua" 
+            placeholder="Angka kedua" 
+            class="block w-full mb-5 px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+        >
+
+        <div class="grid grid-cols-3 gap-3 mb-4">
+            <button id="tambah" class="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded">+</button>
+            <button id="kurang" class="bg-red-600 hover:bg-red-700 text-white py-2 rounded">-</button>
+            <button id="kali" class="bg-green-600 hover:bg-green-700 text-white py-2 rounded">×</button>
+            <button id="bagi" class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 rounded">÷</button>
+            <button id="pangkat" class="bg-purple-600 hover:bg-purple-700 text-white py-2 rounded">^</button>
+            <button id="akar" class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 rounded">√</button>
+            <button id="modulus" class="bg-pink-500 hover:bg-pink-600 text-white py-2 rounded col-span-3">%</button>
+        </div>
+
+        <button id="reset" class="bg-gray-600 hover:bg-gray-700 text-white w-full py-2 rounded mb-3">Bersihkan</button>
+
+        <p id="output" class="text-xl font-medium text-gray-700"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
