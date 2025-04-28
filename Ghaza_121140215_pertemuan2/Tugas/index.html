@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dasbor Pengguna</title>
+  <link rel="stylesheet" href="gaya.css">
+</head>
+<body>
+  <div class="wadah">
+    <header>
+      <h1>Dasbor Pengguna Saya</h1>
+      <p>Kelola tugas, jadwal, atau catatan pribadi Anda.</p>
+    </header>
+
+    <main>
+      <div id="kontainer-tugas"></div>
+      <button id="tambah-tugas-btn">Tambah Tugas</button>
+    </main>
+
+    <footer>
+      <p>Dikembangkan oleh Ghaza Muhammad Al Ghifari</p>
+    </footer>
+  </div>
+
+  <!-- Modal Tugas -->
+  <div id="modalTugas" class="modal">
+    <div class="modal-konten">
+      <h3>Tambah Tugas Baru</h3>
+      <form id="formTugas">
+        <label for="judulTugas">Judul</label>
+        <input type="text" id="judulTugas" placeholder="Masukkan judul tugas" required />
+
+        <label for="deskripsiTugas">Deskripsi</label>
+        <textarea id="deskripsiTugas" placeholder="Masukkan deskripsi tugas" required></textarea>
+
+        <label for="prioritasTugas">Prioritas</label>
+        <select id="prioritasTugas" required>
+          <option value="">Pilih prioritas</option>
+          <option value="rendah">Rendah</option>
+          <option value="sedang">Sedang</option>
+          <option value="tinggi">Tinggi</option>
+        </select>
+
+        <label for="batasWaktuTugas">Batas Waktu</label>
+        <input type="date" id="batasWaktuTugas" required />
+
+        <div class="modal-tombol">
+          <button type="submit" id="simpanTugasBtn">Simpan</button>
+          <button type="button" id="tutupModalBtn">Batal</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="js/utama.js"></script>
+</body>
+</html>
