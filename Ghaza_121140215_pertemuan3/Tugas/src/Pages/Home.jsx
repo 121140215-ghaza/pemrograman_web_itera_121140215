@@ -4,14 +4,8 @@ import { BookList } from "../components/BookList";
 import { BookFilter } from "../components/BookFilter";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogTrigger,
-  DialogContent,
-  DialogTitle,
-  DialogDescription,
-} from "@/components/ui/dialog";
-import { useBooks } from "../context/BookContext";
+import { Dialog, DialogTrigger, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { useBooks } from "../context/BookContext"; 
 
 export default function Home() {
   const { books, dispatch } = useBooks();

@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home"; 
 import Stats from "./pages/Stats";
 import { BookProvider } from "./context/BookContext";
 import Layout from "./components/Layout"; // Import the Layout component
