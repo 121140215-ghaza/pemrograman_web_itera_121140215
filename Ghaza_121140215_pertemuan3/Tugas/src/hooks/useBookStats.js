@@ -4,20 +4,10 @@ import { useBooks } from "../context/BookContext";
 export const useBookStats = () => {
   const { books } = useBooks();
 
-  return useMemo(() => {
-    let own = 0, reading = 0, wishlist = 0;
-
-    for (const b of books) {
-      if (b.status === "Own") own++;
-      else if (b.status === "Reading") reading++;
-      else if (b.status === "Wishlist") wishlist++;
-    }
-
-    return {
-      total: books.length,
-      own,
-      reading,
-      wishlist,
-    };
-  }, [books]);
+  return useMemo(() => ({
+    total: books.length,
+    own: books.filter(b => b.status === "Own").length,
+    reading: books.filter(b => b.status === "Reading").length,
+    wishlist: books.filter(b => b.status === "Wishlist").length
+  }), [books]);  
 };
