@@ -12,6 +12,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/stats" element={<Stats />} />
+            <Route path="*" element={<div>404 Not Found</div>} />
           </Routes>
         </Layout>
       </BrowserRouter>
