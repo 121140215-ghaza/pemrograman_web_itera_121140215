@@ -27,7 +27,7 @@ Aplikasi pengelolaan koleksi buku berbasis **React.js**, dirancang agar pengguna
 
 ## 🧪 Coba Aplikasi
 
-🔗 [https://pemrograman-web-itera-121140215-29s0c1kwo.vercel.app/](#)
+🔗 [https://pemrograman-web-itera-121140215.vercel.app/](#)
 
 ---
 
