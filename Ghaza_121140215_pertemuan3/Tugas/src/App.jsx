@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import Stats from "./pages/Stats";
+import Home from "./pages/home";
+import Stats from "./pages/stats";
 import { BookProvider } from "./context/BookContext";
 import Layout from "./components/Layout"; // Import the Layout component
 
